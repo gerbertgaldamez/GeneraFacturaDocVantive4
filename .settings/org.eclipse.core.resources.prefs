@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/qit/www/wsdoc1/intf/client/WsCreateBillRequest.java=UTF-8
+encoding//src/main/java/com/qit/www/wsdoc1/intf/client/WsCreateBillResponse.java=UTF-8
+encoding//src/main/java/com/qit/www/wsdoc1/intf/client/WsCreateNoteRequest.java=UTF-8
+encoding//src/main/java/com/qit/www/wsdoc1/intf/client/WsCreateNoteResponse.java=UTF-8
+encoding//src/main/java/com/qit/www/wsdoc1/intf/client/WsDoc1.java=UTF-8
+encoding//src/main/java/com/qit/www/wsdoc1/intf/client/WsDoc1Service.java=UTF-8
+encoding//src/main/java/com/qit/www/wsdoc1/intf/client/WsDoc1ServiceLocator.java=UTF-8
+encoding//src/main/java/com/qit/www/wsdoc1/intf/client/WsDoc1Soap11Stub.java=UTF-8

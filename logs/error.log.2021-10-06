@@ -1,0 +1,42 @@
+2021-10-06 06:19:48  [ main:5761 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 06:20:09  [ main:27302 ] - [ ERROR ]  java.net.ConnectException: Connection timed out: no further information
+ 2021-10-06 06:24:15  [ main:2723 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 06:24:36  [ main:24298 ] - [ ERROR ]  java.net.ConnectException: Connection timed out: no further information
+ 2021-10-06 06:32:49  [ main:3294 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 06:33:10  [ main:25068 ] - [ ERROR ]  java.net.ConnectException: Connection timed out: no further information
+ 2021-10-06 06:50:24  [ main:2644 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 06:52:52  [ main:2413 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 06:54:13  [ main:2740 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 08:16:59  [ main:2923 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 08:26:54  [ main:2446 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 08:30:07  [ main:2888 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 08:50:50  [ main:2365 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 08:51:43  [ main:55248 ] - [ ERROR ]  java.sql.SQLSyntaxErrorException: ORA-00900: invalid SQL statement
+
+ 2021-10-06 08:53:37  [ main:2925 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 08:54:19  [ main:45113 ] - [ ERROR ]  java.sql.SQLSyntaxErrorException: ORA-00900: invalid SQL statement
+
+ 2021-10-06 08:56:18  [ main:2925 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 08:57:14  [ main:59451 ] - [ ERROR ]  java.sql.SQLSyntaxErrorException: ORA-00900: invalid SQL statement
+
+ 2021-10-06 09:27:48  [ main:2759 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 09:28:35  [ main:49776 ] - [ ERROR ]  java.sql.SQLSyntaxErrorException: ORA-00900: invalid SQL statement
+
+ 2021-10-06 09:30:24  [ main:2748 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 09:31:04  [ main:42259 ] - [ ERROR ]  java.sql.SQLSyntaxErrorException: ORA-00900: invalid SQL statement
+
+ 2021-10-06 09:35:30  [ main:3534 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 09:36:17  [ main:50606 ] - [ ERROR ]  java.sql.SQLSyntaxErrorException: ORA-00900: invalid SQL statement
+
+ 2021-10-06 09:41:41  [ main:2553 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 12:10:05  [ main:4025 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 12:13:49  [ main:2566 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 14:21:21  [ main:2575 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 15:14:59  [ main:3076 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 15:36:04  [ main:2825 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 18:35:38  [ main:2335 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 18:52:57  [ main:2663 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 19:17:24  [ main:2708 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 19:33:43  [ main:2728 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-06 19:48:08  [ main:2864 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 

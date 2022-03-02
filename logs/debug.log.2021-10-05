@@ -1,0 +1,799 @@
+2021-10-05 22:29:52  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
+2021-10-05 22:29:52  [ main:11 ] - [ INFO ]  Ingresa a constructor de ProcesoFacturasController
+2021-10-05 22:29:52  [ main:14 ] - [ INFO ]  Ingresa a constructor de ProcesoFacturasDao
+2021-10-05 22:29:52  [ main:14 ] - [ DEBUG ]  Antes de obtener la lista en metodo obtenerFacturasVantive
+2021-10-05 22:29:52  [ main:15 ] - [ INFO ]  Antes de ejecutar statement obtenerFacturasVantive
+2021-10-05 22:29:52  [ main:21 ] - [ INFO ]  Antes de obtener conexion
+2021-10-05 22:29:55  [ main:2514 ] - [ INFO ]  Obtiene la conexion de forma correcta: {}
+2021-10-05 22:29:55  [ main:2578 ] - [ INFO ]  SELECT bill_ref_no, tcgncid FROM WS_DOC1_NC_HEADER_VW where tcgncid >=  ? and ind_provision = 1 AND url is null  
+2021-10-05 22:29:55  [ main:2754 ] - [ ERROR ]  Exception => 
+java.sql.SQLException: ORA-01008: not all variables bound
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:195)
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:876)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1175)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1296)
+	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1498)
+	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:406)
+	at com.qitcorp.dao.ProcesoFacturasDao.obtenerFacturasVantive(ProcesoFacturasDao.java:64)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:34)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+2021-10-05 22:29:55  [ main:2761 ] - [ INFO ]  cierra statement en metodo finaliza conexion.
+2021-10-05 22:29:55  [ main:2834 ] - [ INFO ]  cierra conexion en metodo finaliza conexion.
+2021-10-05 22:29:55  [ main:2834 ] - [ INFO ]  se manda a llamar el metodo de finaliza conexion en obtenerFacturasVantive
+2021-10-05 22:29:55  [ main:2834 ] - [ INFO ]  Obtiene lista de vista => 0
+2021-10-05 22:29:55  [ main:2835 ] - [ WARN ]  Lista de la vista vacia
+2021-10-05 22:29:55  [ main:2835 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************
+2021-10-05 22:48:35  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
+2021-10-05 22:48:35  [ main:9 ] - [ INFO ]  Ingresa a constructor de ProcesoFacturasController
+2021-10-05 22:48:35  [ main:11 ] - [ INFO ]  Ingresa a constructor de ProcesoFacturasDao
+2021-10-05 22:48:35  [ main:12 ] - [ DEBUG ]  Antes de obtener la lista en metodo obtenerFacturasVantive
+2021-10-05 22:48:35  [ main:12 ] - [ INFO ]  Antes de ejecutar statement obtenerFacturasVantive
+2021-10-05 22:48:35  [ main:16 ] - [ INFO ]  Antes de obtener conexion
+2021-10-05 22:48:37  [ main:1314 ] - [ INFO ]  Obtiene la conexion de forma correcta: {}
+2021-10-05 22:48:37  [ main:1367 ] - [ INFO ]  SELECT bill_ref_no, tcgncid FROM WS_DOC1_NC_HEADER_VW where tcgncid >=  ? and ind_provision = 1 AND url is null  
+2021-10-05 22:48:37  [ main:1530 ] - [ ERROR ]  Exception => 
+java.sql.SQLException: ORA-01008: not all variables bound
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:195)
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:876)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1175)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1296)
+	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1498)
+	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:406)
+	at com.qitcorp.dao.ProcesoFacturasDao.obtenerFacturasVantive(ProcesoFacturasDao.java:65)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:34)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+2021-10-05 22:48:37  [ main:1535 ] - [ INFO ]  cierra statement en metodo finaliza conexion.
+2021-10-05 22:48:37  [ main:1605 ] - [ INFO ]  cierra conexion en metodo finaliza conexion.
+2021-10-05 22:48:37  [ main:1605 ] - [ INFO ]  se manda a llamar el metodo de finaliza conexion en obtenerFacturasVantive
+2021-10-05 22:48:37  [ main:1606 ] - [ INFO ]  Obtiene lista de vista => 0
+2021-10-05 22:48:37  [ main:1606 ] - [ WARN ]  Lista de la vista vacia
+2021-10-05 22:48:37  [ main:1606 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************
+2021-10-05 22:55:23  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
+2021-10-05 22:55:23  [ main:6 ] - [ INFO ]  Ingresa a constructor de ProcesoFacturasController
+2021-10-05 22:55:23  [ main:8 ] - [ INFO ]  Ingresa a constructor de ProcesoFacturasDao
+2021-10-05 22:55:23  [ main:8 ] - [ DEBUG ]  Antes de obtener la lista en metodo obtenerFacturasVantive
+2021-10-05 22:55:23  [ main:8 ] - [ INFO ]  Antes de ejecutar statement obtenerFacturasVantive
+2021-10-05 22:55:23  [ main:11 ] - [ INFO ]  Antes de obtener conexion
+2021-10-05 22:55:24  [ main:1200 ] - [ INFO ]  Obtiene la conexion de forma correcta: {}
+2021-10-05 22:55:24  [ main:1275 ] - [ INFO ]  SELECT bill_ref_no, tcgncid FROM WS_DOC1_NC_HEADER_VW where tcgncid >=  ? and ind_provision = 1 AND url is null  
+2021-10-05 22:55:24  [ main:1369 ] - [ INFO ]  se obtiene valor del campo bill_ref_no: BILL_REF_NO
+2021-10-05 22:55:24  [ main:1369 ] - [ INFO ]  se obtiene valor del campo bill_ref_no: BILL_REF_NO
+2021-10-05 22:55:24  [ main:1370 ] - [ INFO ]  Statement obtiene resultados obtenerFacturasVantive
+2021-10-05 22:55:24  [ main:1370 ] - [ INFO ]  cierra statement en metodo finaliza conexion.
+2021-10-05 22:55:24  [ main:1441 ] - [ INFO ]  cierra conexion en metodo finaliza conexion.
+2021-10-05 22:55:24  [ main:1441 ] - [ INFO ]  se manda a llamar el metodo de finaliza conexion en obtenerFacturasVantive
+2021-10-05 22:55:24  [ main:1442 ] - [ INFO ]  Obtiene lista de vista => 2
+2021-10-05 22:55:24  [ main:1442 ] - [ INFO ]  Antes de obtener conexion
+2021-10-05 22:55:25  [ main:2238 ] - [ INFO ]  Obtiene la conexion de forma correcta: {}
+2021-10-05 22:55:25  [ main:2239 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+2021-10-05 22:55:25  [ main:2321 ] - [ INFO ]  cierra conexion en metodo finaliza conexion.
+2021-10-05 22:55:25  [ main:2321 ] - [ INFO ]  se manda a llamar el metodo de finaliza conexion en obtenerParametrosWS
+2021-10-05 22:55:25  [ main:2362 ] - [ DEBUG ]  find: resourceName='commons-logging.properties'
+2021-10-05 22:55:25  [ main:2363 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-10-05 22:55:25  [ main:2364 ] - [ DEBUG ]  Could not find resource: commons-logging.properties
+2021-10-05 22:55:25  [ main:2364 ] - [ DEBUG ]  find: resourceName='org/apache/commons/logging/commons-logging.properties'
+2021-10-05 22:55:25  [ main:2365 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-10-05 22:55:25  [ main:2366 ] - [ DEBUG ]  Could not find resource: org/apache/commons/logging/commons-logging.properties
+2021-10-05 22:55:25  [ main:2369 ] - [ DEBUG ]  find: serviceName = 'META-INF/services/org.apache.commons.logging.LogFactory'
+2021-10-05 22:55:25  [ main:2369 ] - [ DEBUG ]  find: resourceName='META-INF/services/org.apache.commons.logging.LogFactory'
+2021-10-05 22:55:25  [ main:2373 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-10-05 22:55:25  [ main:2373 ] - [ DEBUG ]  Could not find resource: META-INF/services/org.apache.commons.logging.LogFactory
+2021-10-05 22:55:25  [ main:2373 ] - [ DEBUG ]  find: className='org.apache.commons.logging.impl.LogFactoryImpl'
+2021-10-05 22:55:25  [ main:2375 ] - [ DEBUG ]  getNextClass: next URL='jar:file:/C:/Users/kevin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar!/org/apache/commons/logging/impl/LogFactoryImpl.class'
+2021-10-05 22:55:25  [ main:2375 ] - [ DEBUG ]  loadClass: Loading class 'org.apache.commons.logging.impl.LogFactoryImpl' with jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951
+2021-10-05 22:55:25  [ main:2382 ] - [ DEBUG ]  find: resourceName='org.apache.axis.EngineConfigurationFactory'
+2021-10-05 22:55:25  [ main:2382 ] - [ DEBUG ]  find: resourceName='org.apache.axis.EngineConfigurationFactory', lookup property 'axis.EngineConfigFactory'
+2021-10-05 22:55:25  [ main:2383 ] - [ DEBUG ]  find: resourceName = 'org.apache.axis.EngineConfigurationFactory'
+2021-10-05 22:55:25  [ main:2383 ] - [ DEBUG ]  find: serviceName = 'META-INF/services/org.apache.axis.EngineConfigurationFactory'
+2021-10-05 22:55:25  [ main:2384 ] - [ DEBUG ]  find: resourceName='META-INF/services/org.apache.axis.EngineConfigurationFactory'
+2021-10-05 22:55:25  [ main:2384 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-10-05 22:55:25  [ main:2384 ] - [ DEBUG ]  Could not find resource: META-INF/services/org.apache.axis.EngineConfigurationFactory
+2021-10-05 22:55:25  [ main:2385 ] - [ DEBUG ]  find: resourceName='org.apache.axis.EngineConfigurationFactory', mapping to constants
+2021-10-05 22:55:25  [ main:2385 ] - [ DEBUG ]  find: className='org.apache.axis.configuration.EngineConfigurationFactoryServlet'
+2021-10-05 22:55:25  [ main:2386 ] - [ DEBUG ]  getNextClass: next URL='jar:file:/C:/Users/kevin/.m2/repository/org/apache/axis/axis/1.4/axis-1.4.jar!/org/apache/axis/configuration/EngineConfigurationFactoryServlet.class'
+2021-10-05 22:55:25  [ main:2387 ] - [ DEBUG ]  loadClass: Loading class 'org.apache.axis.configuration.EngineConfigurationFactoryServlet' with jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951
+2021-10-05 22:55:25  [ main:2392 ] - [ DEBUG ]  getBundle(org.apache.axis,org.apache.axis.i18n,resource,null,...)
+2021-10-05 22:55:25  [ main:2402 ] - [ DEBUG ]  loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.resource, locale es_SV
+2021-10-05 22:55:25  [ main:2403 ] - [ DEBUG ]  Created org.apache.axis.i18n.resource, linked to parent null
+2021-10-05 22:55:25  [ main:2404 ] - [ DEBUG ]  getBundle(org.apache.axis,org.apache.axis.utils,resource,null,...)
+2021-10-05 22:55:25  [ main:2406 ] - [ DEBUG ]  loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.utils.resource, locale es_SV
+2021-10-05 22:55:25  [ main:2406 ] - [ DEBUG ]  loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.resource, locale es_SV
+2021-10-05 22:55:25  [ main:2406 ] - [ DEBUG ]  Root package not found, cross link to org.apache.axis.i18n.resource
+2021-10-05 22:55:25  [ main:2406 ] - [ DEBUG ]  Root package not found, cross link to org.apache.axis.i18n.resource
+2021-10-05 22:55:25  [ main:2406 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(engineConfigLoadFactory)
+2021-10-05 22:55:25  [ main:2407 ] - [ DEBUG ]  Factory org.apache.axis.configuration.EngineConfigurationFactoryServlet Ignored: unable to load/resolve class.
+2021-10-05 22:55:25  [ main:2407 ] - [ DEBUG ]  find: className='org.apache.axis.configuration.EngineConfigurationFactoryDefault'
+2021-10-05 22:55:25  [ main:2408 ] - [ DEBUG ]  getNextClass: next URL='jar:file:/C:/Users/kevin/.m2/repository/org/apache/axis/axis/1.4/axis-1.4.jar!/org/apache/axis/configuration/EngineConfigurationFactoryDefault.class'
+2021-10-05 22:55:25  [ main:2408 ] - [ DEBUG ]  loadClass: Loading class 'org.apache.axis.configuration.EngineConfigurationFactoryDefault' with jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951
+2021-10-05 22:55:25  [ main:2409 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(engineFactory)
+2021-10-05 22:55:25  [ main:2409 ] - [ DEBUG ]  Got EngineFactory: org.apache.axis.configuration.EngineConfigurationFactoryDefault
+2021-10-05 22:55:25  [ main:2413 ] - [ DEBUG ]  Enter: AxisEngine::init
+2021-10-05 22:55:25  [ main:2540 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(attachEnabled)
+2021-10-05 22:55:25  [ main:2541 ] - [ DEBUG ]  Attachment support is enabled?  false
+2021-10-05 22:55:25  [ main:2541 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(attachDisabled)
+2021-10-05 22:55:25  [ main:2541 ] - [ WARN ]  Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2021-10-05 22:55:25  [ main:2547 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(oddDigits00)
+2021-10-05 22:55:25  [ main:2547 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(badChars01)
+2021-10-05 22:55:25  [ main:2636 ] - [ DEBUG ]  Exit: AxisEngine::init
+2021-10-05 22:55:25  [ main:2646 ] - [ DEBUG ]  @12f9af83 added parameter >name:       {http://www.qit.com/wsdoc1/intf/client}WsCreateBillRequest
+typeEntry:  null
+mode:       IN
+position:   0
+isReturn:   false
+typeQName:  {http://www.qit.com/wsdoc1/intf/client}>WsCreateBillRequest
+javaType:   class com.qit.www.wsdoc1.intf.client.WsCreateBillRequest
+inHeader:   false
+outHeader:  false
+@19b93fa8<total parameters:1
+2021-10-05 22:55:25  [ main:2646 ] - [ DEBUG ]  @12f9af83setReturnType({http://www.qit.com/wsdoc1/intf/client}>WsCreateBillResponse)
+2021-10-05 22:55:25  [ main:2654 ] - [ INFO ]  Parametro request: 213992487
+2021-10-05 22:55:25  [ main:2711 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(transport00)
+2021-10-05 22:55:25  [ main:2713 ] - [ DEBUG ]  Transport is org.apache.axis.transport.http.HTTPTransport@4b1d6571
+2021-10-05 22:55:25  [ main:2716 ] - [ DEBUG ]  Enter: Call::invoke(ns, meth, args)
+2021-10-05 22:55:25  [ main:2723 ] - [ DEBUG ]  operation=name:        WsCreateBill
+returnQName: {http://www.qit.com/wsdoc1/intf/client}WsCreateBillResponse
+returnType:  {http://www.qit.com/wsdoc1/intf/client}>WsCreateBillResponse
+returnClass: class com.qit.www.wsdoc1.intf.client.WsCreateBillResponse
+elementQName:null
+soapAction:  null
+style:       document
+use:         literal
+numInParams: 1
+method:null
+ ParameterDesc[0]:
+  name:       {http://www.qit.com/wsdoc1/intf/client}WsCreateBillRequest
+  typeEntry:  null
+  mode:       IN
+  position:   0
+  isReturn:   false
+  typeQName:  {http://www.qit.com/wsdoc1/intf/client}>WsCreateBillRequest
+  javaType:   class com.qit.www.wsdoc1.intf.client.WsCreateBillRequest
+  inHeader:   false
+  outHeader:  false
+
+
+2021-10-05 22:55:25  [ main:2723 ] - [ DEBUG ]  operation.getNumParams()=1
+2021-10-05 22:55:25  [ main:2723 ] - [ DEBUG ]  getParamList number of params: 1
+2021-10-05 22:55:25  [ main:2726 ] - [ DEBUG ]  Enter: Call::invoke(RPCElement)
+2021-10-05 22:55:26  [ main:2735 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(attachEnabled)
+2021-10-05 22:55:26  [ main:2735 ] - [ DEBUG ]  Attachment support is enabled?  false
+2021-10-05 22:55:26  [ main:2742 ] - [ DEBUG ]  Enter: SOAPPart ctor(FORM_SOAPENVELOPE)
+2021-10-05 22:55:26  [ main:2742 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setMsgForm)
+2021-10-05 22:55:26  [ main:2742 ] - [ DEBUG ]  Setting current message form to: FORM_SOAPENVELOPE (currentMessage is now org.apache.axis.message.SOAPEnvelope)
+2021-10-05 22:55:26  [ main:2743 ] - [ DEBUG ]  Exit: SOAPPart ctor()
+2021-10-05 22:55:26  [ main:2743 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(addBody00)
+2021-10-05 22:55:26  [ main:2743 ] - [ DEBUG ]  Adding body element to message...
+2021-10-05 22:55:26  [ main:2743 ] - [ DEBUG ]  Enter: Call::invoke()
+2021-10-05 22:55:26  [ main:2744 ] - [ DEBUG ]  Enter: SOAPPart::getAsSOAPEnvelope()
+2021-10-05 22:55:26  [ main:2744 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(currForm)
+2021-10-05 22:55:26  [ main:2744 ] - [ DEBUG ]  current form is FORM_SOAPENVELOPE
+2021-10-05 22:55:26  [ main:2744 ] - [ DEBUG ]  MessageContext: setTargetService()
+2021-10-05 22:55:26  [ main:2744 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(noService10)
+2021-10-05 22:55:26  [ main:2746 ] - [ DEBUG ]  Exception: 
+org.apache.axis.ConfigurationException: No service named  is available
+org.apache.axis.ConfigurationException: No service named  is available
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.client.Call.invoke(Call.java:2708)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub.wsCreateBill(WsDoc1Soap11Stub.java:164)
+	at com.qitcorp.controller.ProcesoFacturasController.requestWsFacturasVantive(ProcesoFacturasController.java:80)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:44)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.client.Call.invoke(Call.java:2708)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub.wsCreateBill(WsDoc1Soap11Stub.java:164)
+	at com.qitcorp.controller.ProcesoFacturasController.requestWsFacturasVantive(ProcesoFacturasController.java:80)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:44)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+2021-10-05 22:55:26  [ main:2750 ] - [ DEBUG ]  MessageContext: setServiceHandler(null)
+2021-10-05 22:55:26  [ main:2751 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(targetService)
+2021-10-05 22:55:26  [ main:2751 ] - [ DEBUG ]  Target service:  
+2021-10-05 22:55:26  [ main:2752 ] - [ DEBUG ]  MessageContext: setTargetService()
+2021-10-05 22:55:26  [ main:2753 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(noService10)
+2021-10-05 22:55:26  [ main:2753 ] - [ DEBUG ]  Exception: 
+org.apache.axis.ConfigurationException: No service named  is available
+org.apache.axis.ConfigurationException: No service named  is available
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.transport.http.HTTPTransport.setupMessageContextImpl(HTTPTransport.java:89)
+	at org.apache.axis.client.Transport.setupMessageContext(Transport.java:46)
+	at org.apache.axis.client.Call.invoke(Call.java:2738)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub.wsCreateBill(WsDoc1Soap11Stub.java:164)
+	at com.qitcorp.controller.ProcesoFacturasController.requestWsFacturasVantive(ProcesoFacturasController.java:80)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:44)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.transport.http.HTTPTransport.setupMessageContextImpl(HTTPTransport.java:89)
+	at org.apache.axis.client.Transport.setupMessageContext(Transport.java:46)
+	at org.apache.axis.client.Call.invoke(Call.java:2738)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub.wsCreateBill(WsDoc1Soap11Stub.java:164)
+	at com.qitcorp.controller.ProcesoFacturasController.requestWsFacturasVantive(ProcesoFacturasController.java:80)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:44)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+2021-10-05 22:55:26  [ main:2755 ] - [ DEBUG ]  MessageContext: setServiceHandler(null)
+2021-10-05 22:55:26  [ main:2761 ] - [ DEBUG ]  Enter: SOAPPart::getAsSOAPEnvelope()
+2021-10-05 22:55:26  [ main:2761 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(currForm)
+2021-10-05 22:55:26  [ main:2761 ] - [ DEBUG ]  current form is FORM_SOAPENVELOPE
+2021-10-05 22:55:26  [ main:2762 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-10-05 22:55:26  [ main:2762 ] - [ DEBUG ]  register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+2021-10-05 22:55:26  [ main:2762 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-10-05 22:55:26  [ main:2762 ] - [ DEBUG ]  register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+2021-10-05 22:55:26  [ main:2762 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-10-05 22:55:26  [ main:2763 ] - [ DEBUG ]  register 'xsd' - 'http://www.w3.org/2001/XMLSchema'
+2021-10-05 22:55:26  [ main:2763 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-10-05 22:55:26  [ main:2763 ] - [ DEBUG ]  register 'xsi' - 'http://www.w3.org/2001/XMLSchema-instance'
+2021-10-05 22:55:26  [ main:2763 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-10-05 22:55:26  [ main:2763 ] - [ DEBUG ]  Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope
+2021-10-05 22:55:26  [ main:2768 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-10-05 22:55:26  [ main:2769 ] - [ DEBUG ]  Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body
+2021-10-05 22:55:26  [ main:2769 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-10-05 22:55:26  [ main:2769 ] - [ DEBUG ]  register '' - 'http://www.qit.com/wsdoc1/intf/client'
+2021-10-05 22:55:26  [ main:2771 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-10-05 22:55:26  [ main:2772 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:WsCreateBillRequest
+2021-10-05 22:55:26  [ main:2777 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-10-05 22:55:26  [ main:2778 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:bill_ref_no
+2021-10-05 22:55:26  [ main:2781 ] - [ DEBUG ]  find: serviceName = 'META-INF/services/org.apache.axis.components.encoding.XMLEncoder'
+2021-10-05 22:55:26  [ main:2781 ] - [ DEBUG ]  find: resourceName='META-INF/services/org.apache.axis.components.encoding.XMLEncoder'
+2021-10-05 22:55:26  [ main:2781 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-10-05 22:55:26  [ main:2782 ] - [ DEBUG ]  Could not find resource: META-INF/services/org.apache.axis.components.encoding.XMLEncoder
+2021-10-05 22:55:26  [ main:2782 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-10-05 22:55:26  [ main:2783 ] - [ DEBUG ]  End element bill_ref_no
+2021-10-05 22:55:26  [ main:2783 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-10-05 22:55:26  [ main:2783 ] - [ DEBUG ]  End element WsCreateBillRequest
+2021-10-05 22:55:26  [ main:2783 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-10-05 22:55:26  [ main:2784 ] - [ DEBUG ]  End element soapenv:Body
+2021-10-05 22:55:26  [ main:2784 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-10-05 22:55:26  [ main:2784 ] - [ DEBUG ]  End element soapenv:Envelope
+2021-10-05 22:55:26  [ main:2784 ] - [ DEBUG ]  <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><WsCreateBillRequest xmlns="http://www.qit.com/wsdoc1/intf/client"><bill_ref_no>213992487</bill_ref_no></WsCreateBillRequest></soapenv:Body></soapenv:Envelope>
+2021-10-05 22:55:26  [ main:2784 ] - [ DEBUG ]  Enter: AxisClient::invoke
+2021-10-05 22:55:26  [ main:2785 ] - [ DEBUG ]  EngineHandler: null
+2021-10-05 22:55:26  [ main:2788 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(axisUserAgent)
+2021-10-05 22:55:26  [ main:2792 ] - [ DEBUG ]  Enter: SimpleChain::invoke
+2021-10-05 22:55:26  [ main:2792 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(enter00)
+2021-10-05 22:55:26  [ main:2793 ] - [ DEBUG ]  Enter:  HTTPSender::invoke
+2021-10-05 22:55:26  [ main:2793 ] - [ DEBUG ]  Enter: SOAPPart::saveChanges
+2021-10-05 22:55:26  [ main:2796 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-10-05 22:55:26  [ main:2796 ] - [ DEBUG ]  register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+2021-10-05 22:55:26  [ main:2796 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-10-05 22:55:26  [ main:2796 ] - [ DEBUG ]  register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+2021-10-05 22:55:26  [ main:2796 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-10-05 22:55:26  [ main:2797 ] - [ DEBUG ]  register 'xsd' - 'http://www.w3.org/2001/XMLSchema'
+2021-10-05 22:55:26  [ main:2797 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-10-05 22:55:26  [ main:2797 ] - [ DEBUG ]  register 'xsi' - 'http://www.w3.org/2001/XMLSchema-instance'
+2021-10-05 22:55:26  [ main:2797 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-10-05 22:55:26  [ main:2797 ] - [ DEBUG ]  Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope
+2021-10-05 22:55:26  [ main:2797 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-10-05 22:55:26  [ main:2797 ] - [ DEBUG ]  Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body
+2021-10-05 22:55:26  [ main:2798 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-10-05 22:55:26  [ main:2798 ] - [ DEBUG ]  register '' - 'http://www.qit.com/wsdoc1/intf/client'
+2021-10-05 22:55:26  [ main:2798 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-10-05 22:55:26  [ main:2798 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:WsCreateBillRequest
+2021-10-05 22:55:26  [ main:2798 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-10-05 22:55:26  [ main:2798 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:bill_ref_no
+2021-10-05 22:55:26  [ main:2799 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-10-05 22:55:26  [ main:2799 ] - [ DEBUG ]  End element bill_ref_no
+2021-10-05 22:55:26  [ main:2799 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-10-05 22:55:26  [ main:2799 ] - [ DEBUG ]  End element WsCreateBillRequest
+2021-10-05 22:55:26  [ main:2799 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-10-05 22:55:26  [ main:2799 ] - [ DEBUG ]  End element soapenv:Body
+2021-10-05 22:55:26  [ main:2799 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-10-05 22:55:26  [ main:2799 ] - [ DEBUG ]  End element soapenv:Envelope
+2021-10-05 22:55:26  [ main:2800 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setMsgForm)
+2021-10-05 22:55:26  [ main:2800 ] - [ DEBUG ]  Setting current message form to: FORM_OPTIMIZED (currentMessage is now org.apache.axis.utils.ByteArray)
+2021-10-05 22:55:26  [ main:2800 ] - [ DEBUG ]  Exit: SOAPPart::saveChanges(): org.apache.axis.utils.ByteArray@cd1d761
+2021-10-05 22:55:26  [ main:2805 ] - [ DEBUG ]  find: resourceName='org.apache.axis.components.net.SocketFactory'
+2021-10-05 22:55:26  [ main:2805 ] - [ DEBUG ]  find: resourceName='org.apache.axis.components.net.SocketFactory', lookup property 'axis.socketFactory'
+2021-10-05 22:55:26  [ main:2805 ] - [ DEBUG ]  find: resourceName = 'org.apache.axis.components.net.SocketFactory'
+2021-10-05 22:55:26  [ main:2805 ] - [ DEBUG ]  find: serviceName = 'META-INF/services/org.apache.axis.components.net.SocketFactory'
+2021-10-05 22:55:26  [ main:2806 ] - [ DEBUG ]  find: resourceName='META-INF/services/org.apache.axis.components.net.SocketFactory'
+2021-10-05 22:55:26  [ main:2806 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-10-05 22:55:26  [ main:2806 ] - [ DEBUG ]  Could not find resource: META-INF/services/org.apache.axis.components.net.SocketFactory
+2021-10-05 22:55:26  [ main:2806 ] - [ DEBUG ]  find: resourceName='org.apache.axis.components.net.SocketFactory', mapping to constants
+2021-10-05 22:55:26  [ main:2806 ] - [ DEBUG ]  find: className='org.apache.axis.components.net.DefaultSocketFactory'
+2021-10-05 22:55:26  [ main:2807 ] - [ DEBUG ]  getNextClass: next URL='jar:file:/C:/Users/kevin/.m2/repository/org/apache/axis/axis/1.4/axis-1.4.jar!/org/apache/axis/components/net/DefaultSocketFactory.class'
+2021-10-05 22:55:26  [ main:2807 ] - [ DEBUG ]  loadClass: Loading class 'org.apache.axis.components.net.DefaultSocketFactory' with jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951
+2021-10-05 22:55:26  [ main:2809 ] - [ DEBUG ]  find: serviceName = 'META-INF/services/org.apache.axis.components.net.TransportClientProperties'
+2021-10-05 22:55:26  [ main:2809 ] - [ DEBUG ]  find: resourceName='META-INF/services/org.apache.axis.components.net.TransportClientProperties'
+2021-10-05 22:55:26  [ main:2810 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-10-05 22:55:26  [ main:2810 ] - [ DEBUG ]  Could not find resource: META-INF/services/org.apache.axis.components.net.TransportClientProperties
+2021-10-05 22:55:47  [ main:23849 ] - [ DEBUG ]  java.lang.reflect.InvocationTargetException
+2021-10-05 22:55:47  [ main:23854 ] - [ DEBUG ]  Enter: SOAPPart ctor(FORM_FAULT)
+2021-10-05 22:55:47  [ main:23854 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setMsgForm)
+2021-10-05 22:55:47  [ main:23854 ] - [ DEBUG ]  Setting current message form to: FORM_FAULT (currentMessage is now org.apache.axis.AxisFault)
+2021-10-05 22:55:47  [ main:23854 ] - [ DEBUG ]  Exit: SOAPPart ctor()
+2021-10-05 22:55:47  [ main:23855 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(toAxisFault00)
+2021-10-05 22:55:47  [ main:23855 ] - [ DEBUG ]  Mapping Exception to AxisFault
+AxisFault
+ faultCode: {http://schemas.xmlsoap.org/soap/envelope/}Server.userException
+ faultSubcode: 
+ faultString: java.net.ConnectException: Connection timed out: no further information
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+	{http://xml.apache.org/axis/}stackTrace:java.net.ConnectException: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:660)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.axis.components.net.DefaultSocketFactory.create(DefaultSocketFactory.java:153)
+	at org.apache.axis.components.net.DefaultSocketFactory.create(DefaultSocketFactory.java:120)
+	at org.apache.axis.transport.http.HTTPSender.getSocket(HTTPSender.java:191)
+	at org.apache.axis.transport.http.HTTPSender.writeToSocket(HTTPSender.java:404)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:138)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub.wsCreateBill(WsDoc1Soap11Stub.java:164)
+	at com.qitcorp.controller.ProcesoFacturasController.requestWsFacturasVantive(ProcesoFacturasController.java:80)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:44)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+
+	{http://xml.apache.org/axis/}hostname:LAPTOP-QCA1RN8H
+
+java.net.ConnectException: Connection timed out: no further information
+	at org.apache.axis.AxisFault.makeFault(AxisFault.java:101)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:154)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub.wsCreateBill(WsDoc1Soap11Stub.java:164)
+	at com.qitcorp.controller.ProcesoFacturasController.requestWsFacturasVantive(ProcesoFacturasController.java:80)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:44)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:660)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.axis.components.net.DefaultSocketFactory.create(DefaultSocketFactory.java:153)
+	at org.apache.axis.components.net.DefaultSocketFactory.create(DefaultSocketFactory.java:120)
+	at org.apache.axis.transport.http.HTTPSender.getSocket(HTTPSender.java:191)
+	at org.apache.axis.transport.http.HTTPSender.writeToSocket(HTTPSender.java:404)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:138)
+	... 13 more
+2021-10-05 22:55:47  [ main:23856 ] - [ ERROR ]  java.net.ConnectException: Connection timed out: no further information
+2021-10-05 22:55:47  [ main:23857 ] - [ INFO ]  OBJETO FACTURAS: 213992487
+2021-10-05 22:58:20  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
+2021-10-05 22:58:20  [ main:6 ] - [ INFO ]  Ingresa a constructor de ProcesoFacturasController
+2021-10-05 22:58:20  [ main:9 ] - [ INFO ]  Ingresa a constructor de ProcesoFacturasDao
+2021-10-05 22:58:20  [ main:10 ] - [ DEBUG ]  Antes de obtener la lista en metodo obtenerFacturasVantive
+2021-10-05 22:58:20  [ main:10 ] - [ INFO ]  Antes de ejecutar statement obtenerFacturasVantive
+2021-10-05 22:58:20  [ main:14 ] - [ INFO ]  Antes de obtener conexion
+2021-10-05 22:58:21  [ main:1282 ] - [ INFO ]  Obtiene la conexion de forma correcta: {}
+2021-10-05 22:58:21  [ main:1351 ] - [ INFO ]  SELECT bill_ref_no, tcgncid FROM WS_DOC1_NC_HEADER_VW where tcgncid >=  ? and ind_provision = 1 AND url is null  
+2021-10-05 22:58:21  [ main:1434 ] - [ INFO ]  se obtiene valor del campo bill_ref_no: BILL_REF_NO
+2021-10-05 22:58:21  [ main:1435 ] - [ INFO ]  se obtiene valor del campo bill_ref_no: BILL_REF_NO
+2021-10-05 22:58:21  [ main:1435 ] - [ INFO ]  Statement obtiene resultados obtenerFacturasVantive
+2021-10-05 22:58:21  [ main:1435 ] - [ INFO ]  cierra statement en metodo finaliza conexion.
+2021-10-05 22:58:21  [ main:1526 ] - [ INFO ]  cierra conexion en metodo finaliza conexion.
+2021-10-05 22:58:21  [ main:1527 ] - [ INFO ]  se manda a llamar el metodo de finaliza conexion en obtenerFacturasVantive
+2021-10-05 22:58:21  [ main:1527 ] - [ INFO ]  Obtiene lista de vista => 2
+2021-10-05 22:58:21  [ main:1527 ] - [ INFO ]  Antes de obtener conexion
+2021-10-05 22:58:22  [ main:2357 ] - [ INFO ]  Obtiene la conexion de forma correcta: {}
+2021-10-05 22:58:22  [ main:2359 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+2021-10-05 22:58:22  [ main:2429 ] - [ INFO ]  cierra conexion en metodo finaliza conexion.
+2021-10-05 22:58:22  [ main:2430 ] - [ INFO ]  se manda a llamar el metodo de finaliza conexion en obtenerParametrosWS
+2021-10-05 22:58:22  [ main:2461 ] - [ DEBUG ]  find: resourceName='commons-logging.properties'
+2021-10-05 22:58:22  [ main:2461 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-10-05 22:58:22  [ main:2462 ] - [ DEBUG ]  Could not find resource: commons-logging.properties
+2021-10-05 22:58:22  [ main:2462 ] - [ DEBUG ]  find: resourceName='org/apache/commons/logging/commons-logging.properties'
+2021-10-05 22:58:22  [ main:2463 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-10-05 22:58:22  [ main:2463 ] - [ DEBUG ]  Could not find resource: org/apache/commons/logging/commons-logging.properties
+2021-10-05 22:58:22  [ main:2466 ] - [ DEBUG ]  find: serviceName = 'META-INF/services/org.apache.commons.logging.LogFactory'
+2021-10-05 22:58:22  [ main:2466 ] - [ DEBUG ]  find: resourceName='META-INF/services/org.apache.commons.logging.LogFactory'
+2021-10-05 22:58:22  [ main:2468 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-10-05 22:58:22  [ main:2469 ] - [ DEBUG ]  Could not find resource: META-INF/services/org.apache.commons.logging.LogFactory
+2021-10-05 22:58:22  [ main:2469 ] - [ DEBUG ]  find: className='org.apache.commons.logging.impl.LogFactoryImpl'
+2021-10-05 22:58:22  [ main:2470 ] - [ DEBUG ]  getNextClass: next URL='jar:file:/C:/Users/kevin/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar!/org/apache/commons/logging/impl/LogFactoryImpl.class'
+2021-10-05 22:58:22  [ main:2471 ] - [ DEBUG ]  loadClass: Loading class 'org.apache.commons.logging.impl.LogFactoryImpl' with jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951
+2021-10-05 22:58:22  [ main:2477 ] - [ DEBUG ]  find: resourceName='org.apache.axis.EngineConfigurationFactory'
+2021-10-05 22:58:22  [ main:2478 ] - [ DEBUG ]  find: resourceName='org.apache.axis.EngineConfigurationFactory', lookup property 'axis.EngineConfigFactory'
+2021-10-05 22:58:22  [ main:2479 ] - [ DEBUG ]  find: resourceName = 'org.apache.axis.EngineConfigurationFactory'
+2021-10-05 22:58:22  [ main:2479 ] - [ DEBUG ]  find: serviceName = 'META-INF/services/org.apache.axis.EngineConfigurationFactory'
+2021-10-05 22:58:22  [ main:2480 ] - [ DEBUG ]  find: resourceName='META-INF/services/org.apache.axis.EngineConfigurationFactory'
+2021-10-05 22:58:22  [ main:2480 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-10-05 22:58:22  [ main:2480 ] - [ DEBUG ]  Could not find resource: META-INF/services/org.apache.axis.EngineConfigurationFactory
+2021-10-05 22:58:22  [ main:2480 ] - [ DEBUG ]  find: resourceName='org.apache.axis.EngineConfigurationFactory', mapping to constants
+2021-10-05 22:58:22  [ main:2481 ] - [ DEBUG ]  find: className='org.apache.axis.configuration.EngineConfigurationFactoryServlet'
+2021-10-05 22:58:22  [ main:2481 ] - [ DEBUG ]  getNextClass: next URL='jar:file:/C:/Users/kevin/.m2/repository/org/apache/axis/axis/1.4/axis-1.4.jar!/org/apache/axis/configuration/EngineConfigurationFactoryServlet.class'
+2021-10-05 22:58:22  [ main:2482 ] - [ DEBUG ]  loadClass: Loading class 'org.apache.axis.configuration.EngineConfigurationFactoryServlet' with jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951
+2021-10-05 22:58:22  [ main:2484 ] - [ DEBUG ]  getBundle(org.apache.axis,org.apache.axis.i18n,resource,null,...)
+2021-10-05 22:58:22  [ main:2493 ] - [ DEBUG ]  loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.resource, locale es_SV
+2021-10-05 22:58:22  [ main:2493 ] - [ DEBUG ]  Created org.apache.axis.i18n.resource, linked to parent null
+2021-10-05 22:58:22  [ main:2494 ] - [ DEBUG ]  getBundle(org.apache.axis,org.apache.axis.utils,resource,null,...)
+2021-10-05 22:58:22  [ main:2495 ] - [ DEBUG ]  loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.utils.resource, locale es_SV
+2021-10-05 22:58:22  [ main:2496 ] - [ DEBUG ]  loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.resource, locale es_SV
+2021-10-05 22:58:22  [ main:2496 ] - [ DEBUG ]  Root package not found, cross link to org.apache.axis.i18n.resource
+2021-10-05 22:58:22  [ main:2496 ] - [ DEBUG ]  Root package not found, cross link to org.apache.axis.i18n.resource
+2021-10-05 22:58:22  [ main:2496 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(engineConfigLoadFactory)
+2021-10-05 22:58:22  [ main:2497 ] - [ DEBUG ]  Factory org.apache.axis.configuration.EngineConfigurationFactoryServlet Ignored: unable to load/resolve class.
+2021-10-05 22:58:22  [ main:2497 ] - [ DEBUG ]  find: className='org.apache.axis.configuration.EngineConfigurationFactoryDefault'
+2021-10-05 22:58:22  [ main:2498 ] - [ DEBUG ]  getNextClass: next URL='jar:file:/C:/Users/kevin/.m2/repository/org/apache/axis/axis/1.4/axis-1.4.jar!/org/apache/axis/configuration/EngineConfigurationFactoryDefault.class'
+2021-10-05 22:58:22  [ main:2498 ] - [ DEBUG ]  loadClass: Loading class 'org.apache.axis.configuration.EngineConfigurationFactoryDefault' with jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951
+2021-10-05 22:58:22  [ main:2498 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(engineFactory)
+2021-10-05 22:58:22  [ main:2498 ] - [ DEBUG ]  Got EngineFactory: org.apache.axis.configuration.EngineConfigurationFactoryDefault
+2021-10-05 22:58:22  [ main:2500 ] - [ DEBUG ]  Enter: AxisEngine::init
+2021-10-05 22:58:22  [ main:2600 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(attachEnabled)
+2021-10-05 22:58:22  [ main:2600 ] - [ DEBUG ]  Attachment support is enabled?  false
+2021-10-05 22:58:22  [ main:2600 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(attachDisabled)
+2021-10-05 22:58:22  [ main:2601 ] - [ WARN ]  Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2021-10-05 22:58:22  [ main:2606 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(oddDigits00)
+2021-10-05 22:58:22  [ main:2606 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(badChars01)
+2021-10-05 22:58:22  [ main:2683 ] - [ DEBUG ]  Exit: AxisEngine::init
+2021-10-05 22:58:22  [ main:2689 ] - [ DEBUG ]  @12f9af83 added parameter >name:       {http://www.qit.com/wsdoc1/intf/client}WsCreateBillRequest
+typeEntry:  null
+mode:       IN
+position:   0
+isReturn:   false
+typeQName:  {http://www.qit.com/wsdoc1/intf/client}>WsCreateBillRequest
+javaType:   class com.qit.www.wsdoc1.intf.client.WsCreateBillRequest
+inHeader:   false
+outHeader:  false
+@19b93fa8<total parameters:1
+2021-10-05 22:58:22  [ main:2689 ] - [ DEBUG ]  @12f9af83setReturnType({http://www.qit.com/wsdoc1/intf/client}>WsCreateBillResponse)
+2021-10-05 22:58:22  [ main:2695 ] - [ INFO ]  Parametro request: 213992487
+2021-10-05 22:58:22  [ main:2742 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(transport00)
+2021-10-05 22:58:22  [ main:2743 ] - [ DEBUG ]  Transport is org.apache.axis.transport.http.HTTPTransport@4b1d6571
+2021-10-05 22:58:22  [ main:2745 ] - [ DEBUG ]  Enter: Call::invoke(ns, meth, args)
+2021-10-05 22:58:22  [ main:2750 ] - [ DEBUG ]  operation=name:        WsCreateBill
+returnQName: {http://www.qit.com/wsdoc1/intf/client}WsCreateBillResponse
+returnType:  {http://www.qit.com/wsdoc1/intf/client}>WsCreateBillResponse
+returnClass: class com.qit.www.wsdoc1.intf.client.WsCreateBillResponse
+elementQName:null
+soapAction:  null
+style:       document
+use:         literal
+numInParams: 1
+method:null
+ ParameterDesc[0]:
+  name:       {http://www.qit.com/wsdoc1/intf/client}WsCreateBillRequest
+  typeEntry:  null
+  mode:       IN
+  position:   0
+  isReturn:   false
+  typeQName:  {http://www.qit.com/wsdoc1/intf/client}>WsCreateBillRequest
+  javaType:   class com.qit.www.wsdoc1.intf.client.WsCreateBillRequest
+  inHeader:   false
+  outHeader:  false
+
+
+2021-10-05 22:58:22  [ main:2750 ] - [ DEBUG ]  operation.getNumParams()=1
+2021-10-05 22:58:22  [ main:2751 ] - [ DEBUG ]  getParamList number of params: 1
+2021-10-05 22:58:22  [ main:2754 ] - [ DEBUG ]  Enter: Call::invoke(RPCElement)
+2021-10-05 22:58:22  [ main:2762 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(attachEnabled)
+2021-10-05 22:58:22  [ main:2762 ] - [ DEBUG ]  Attachment support is enabled?  false
+2021-10-05 22:58:22  [ main:2769 ] - [ DEBUG ]  Enter: SOAPPart ctor(FORM_SOAPENVELOPE)
+2021-10-05 22:58:22  [ main:2770 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setMsgForm)
+2021-10-05 22:58:22  [ main:2770 ] - [ DEBUG ]  Setting current message form to: FORM_SOAPENVELOPE (currentMessage is now org.apache.axis.message.SOAPEnvelope)
+2021-10-05 22:58:22  [ main:2773 ] - [ DEBUG ]  Exit: SOAPPart ctor()
+2021-10-05 22:58:22  [ main:2774 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(addBody00)
+2021-10-05 22:58:22  [ main:2775 ] - [ DEBUG ]  Adding body element to message...
+2021-10-05 22:58:22  [ main:2775 ] - [ DEBUG ]  Enter: Call::invoke()
+2021-10-05 22:58:22  [ main:2776 ] - [ DEBUG ]  Enter: SOAPPart::getAsSOAPEnvelope()
+2021-10-05 22:58:22  [ main:2776 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(currForm)
+2021-10-05 22:58:22  [ main:2777 ] - [ DEBUG ]  current form is FORM_SOAPENVELOPE
+2021-10-05 22:58:22  [ main:2777 ] - [ DEBUG ]  MessageContext: setTargetService()
+2021-10-05 22:58:22  [ main:2778 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(noService10)
+2021-10-05 22:58:22  [ main:2779 ] - [ DEBUG ]  Exception: 
+org.apache.axis.ConfigurationException: No service named  is available
+org.apache.axis.ConfigurationException: No service named  is available
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.client.Call.invoke(Call.java:2708)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub.wsCreateBill(WsDoc1Soap11Stub.java:164)
+	at com.qitcorp.controller.ProcesoFacturasController.requestWsFacturasVantive(ProcesoFacturasController.java:80)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:44)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.client.Call.invoke(Call.java:2708)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub.wsCreateBill(WsDoc1Soap11Stub.java:164)
+	at com.qitcorp.controller.ProcesoFacturasController.requestWsFacturasVantive(ProcesoFacturasController.java:80)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:44)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+2021-10-05 22:58:22  [ main:2782 ] - [ DEBUG ]  MessageContext: setServiceHandler(null)
+2021-10-05 22:58:22  [ main:2782 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(targetService)
+2021-10-05 22:58:22  [ main:2782 ] - [ DEBUG ]  Target service:  
+2021-10-05 22:58:22  [ main:2782 ] - [ DEBUG ]  MessageContext: setTargetService()
+2021-10-05 22:58:22  [ main:2782 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(noService10)
+2021-10-05 22:58:22  [ main:2783 ] - [ DEBUG ]  Exception: 
+org.apache.axis.ConfigurationException: No service named  is available
+org.apache.axis.ConfigurationException: No service named  is available
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.transport.http.HTTPTransport.setupMessageContextImpl(HTTPTransport.java:89)
+	at org.apache.axis.client.Transport.setupMessageContext(Transport.java:46)
+	at org.apache.axis.client.Call.invoke(Call.java:2738)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub.wsCreateBill(WsDoc1Soap11Stub.java:164)
+	at com.qitcorp.controller.ProcesoFacturasController.requestWsFacturasVantive(ProcesoFacturasController.java:80)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:44)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.transport.http.HTTPTransport.setupMessageContextImpl(HTTPTransport.java:89)
+	at org.apache.axis.client.Transport.setupMessageContext(Transport.java:46)
+	at org.apache.axis.client.Call.invoke(Call.java:2738)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub.wsCreateBill(WsDoc1Soap11Stub.java:164)
+	at com.qitcorp.controller.ProcesoFacturasController.requestWsFacturasVantive(ProcesoFacturasController.java:80)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:44)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+2021-10-05 22:58:22  [ main:2783 ] - [ DEBUG ]  MessageContext: setServiceHandler(null)
+2021-10-05 22:58:22  [ main:2789 ] - [ DEBUG ]  Enter: SOAPPart::getAsSOAPEnvelope()
+2021-10-05 22:58:22  [ main:2789 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(currForm)
+2021-10-05 22:58:22  [ main:2790 ] - [ DEBUG ]  current form is FORM_SOAPENVELOPE
+2021-10-05 22:58:22  [ main:2790 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-10-05 22:58:22  [ main:2790 ] - [ DEBUG ]  register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+2021-10-05 22:58:22  [ main:2791 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-10-05 22:58:22  [ main:2791 ] - [ DEBUG ]  register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+2021-10-05 22:58:22  [ main:2791 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-10-05 22:58:22  [ main:2791 ] - [ DEBUG ]  register 'xsd' - 'http://www.w3.org/2001/XMLSchema'
+2021-10-05 22:58:22  [ main:2791 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-10-05 22:58:22  [ main:2791 ] - [ DEBUG ]  register 'xsi' - 'http://www.w3.org/2001/XMLSchema-instance'
+2021-10-05 22:58:22  [ main:2791 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-10-05 22:58:22  [ main:2792 ] - [ DEBUG ]  Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope
+2021-10-05 22:58:22  [ main:2794 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-10-05 22:58:22  [ main:2795 ] - [ DEBUG ]  Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body
+2021-10-05 22:58:22  [ main:2795 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-10-05 22:58:22  [ main:2795 ] - [ DEBUG ]  register '' - 'http://www.qit.com/wsdoc1/intf/client'
+2021-10-05 22:58:22  [ main:2796 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-10-05 22:58:22  [ main:2796 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:WsCreateBillRequest
+2021-10-05 22:58:22  [ main:2801 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-10-05 22:58:22  [ main:2802 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:bill_ref_no
+2021-10-05 22:58:22  [ main:2804 ] - [ DEBUG ]  find: serviceName = 'META-INF/services/org.apache.axis.components.encoding.XMLEncoder'
+2021-10-05 22:58:22  [ main:2805 ] - [ DEBUG ]  find: resourceName='META-INF/services/org.apache.axis.components.encoding.XMLEncoder'
+2021-10-05 22:58:22  [ main:2805 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-10-05 22:58:22  [ main:2805 ] - [ DEBUG ]  Could not find resource: META-INF/services/org.apache.axis.components.encoding.XMLEncoder
+2021-10-05 22:58:22  [ main:2805 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-10-05 22:58:22  [ main:2805 ] - [ DEBUG ]  End element bill_ref_no
+2021-10-05 22:58:22  [ main:2806 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-10-05 22:58:22  [ main:2806 ] - [ DEBUG ]  End element WsCreateBillRequest
+2021-10-05 22:58:22  [ main:2806 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-10-05 22:58:22  [ main:2806 ] - [ DEBUG ]  End element soapenv:Body
+2021-10-05 22:58:22  [ main:2806 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-10-05 22:58:22  [ main:2806 ] - [ DEBUG ]  End element soapenv:Envelope
+2021-10-05 22:58:22  [ main:2806 ] - [ DEBUG ]  <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><WsCreateBillRequest xmlns="http://www.qit.com/wsdoc1/intf/client"><bill_ref_no>213992487</bill_ref_no></WsCreateBillRequest></soapenv:Body></soapenv:Envelope>
+2021-10-05 22:58:22  [ main:2806 ] - [ DEBUG ]  Enter: AxisClient::invoke
+2021-10-05 22:58:22  [ main:2807 ] - [ DEBUG ]  EngineHandler: null
+2021-10-05 22:58:22  [ main:2809 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(axisUserAgent)
+2021-10-05 22:58:22  [ main:2813 ] - [ DEBUG ]  Enter: SimpleChain::invoke
+2021-10-05 22:58:22  [ main:2813 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(enter00)
+2021-10-05 22:58:22  [ main:2813 ] - [ DEBUG ]  Enter:  HTTPSender::invoke
+2021-10-05 22:58:22  [ main:2815 ] - [ DEBUG ]  Enter: SOAPPart::saveChanges
+2021-10-05 22:58:22  [ main:2817 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-10-05 22:58:22  [ main:2817 ] - [ DEBUG ]  register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+2021-10-05 22:58:22  [ main:2817 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-10-05 22:58:22  [ main:2818 ] - [ DEBUG ]  register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+2021-10-05 22:58:22  [ main:2818 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-10-05 22:58:22  [ main:2818 ] - [ DEBUG ]  register 'xsd' - 'http://www.w3.org/2001/XMLSchema'
+2021-10-05 22:58:22  [ main:2818 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-10-05 22:58:22  [ main:2818 ] - [ DEBUG ]  register 'xsi' - 'http://www.w3.org/2001/XMLSchema-instance'
+2021-10-05 22:58:22  [ main:2818 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-10-05 22:58:22  [ main:2818 ] - [ DEBUG ]  Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope
+2021-10-05 22:58:22  [ main:2819 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-10-05 22:58:22  [ main:2819 ] - [ DEBUG ]  Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body
+2021-10-05 22:58:22  [ main:2820 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(register00)
+2021-10-05 22:58:22  [ main:2820 ] - [ DEBUG ]  register '' - 'http://www.qit.com/wsdoc1/intf/client'
+2021-10-05 22:58:22  [ main:2821 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-10-05 22:58:22  [ main:2821 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:WsCreateBillRequest
+2021-10-05 22:58:22  [ main:2821 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(startElem00)
+2021-10-05 22:58:22  [ main:2822 ] - [ DEBUG ]  Start element [http://www.qit.com/wsdoc1/intf/client]:bill_ref_no
+2021-10-05 22:58:22  [ main:2822 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-10-05 22:58:22  [ main:2822 ] - [ DEBUG ]  End element bill_ref_no
+2021-10-05 22:58:22  [ main:2822 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-10-05 22:58:22  [ main:2822 ] - [ DEBUG ]  End element WsCreateBillRequest
+2021-10-05 22:58:22  [ main:2823 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-10-05 22:58:22  [ main:2823 ] - [ DEBUG ]  End element soapenv:Body
+2021-10-05 22:58:22  [ main:2823 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(endElem00)
+2021-10-05 22:58:22  [ main:2823 ] - [ DEBUG ]  End element soapenv:Envelope
+2021-10-05 22:58:22  [ main:2823 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setMsgForm)
+2021-10-05 22:58:22  [ main:2823 ] - [ DEBUG ]  Setting current message form to: FORM_OPTIMIZED (currentMessage is now org.apache.axis.utils.ByteArray)
+2021-10-05 22:58:22  [ main:2824 ] - [ DEBUG ]  Exit: SOAPPart::saveChanges(): org.apache.axis.utils.ByteArray@cd1d761
+2021-10-05 22:58:22  [ main:2827 ] - [ DEBUG ]  find: resourceName='org.apache.axis.components.net.SocketFactory'
+2021-10-05 22:58:22  [ main:2828 ] - [ DEBUG ]  find: resourceName='org.apache.axis.components.net.SocketFactory', lookup property 'axis.socketFactory'
+2021-10-05 22:58:22  [ main:2828 ] - [ DEBUG ]  find: resourceName = 'org.apache.axis.components.net.SocketFactory'
+2021-10-05 22:58:22  [ main:2828 ] - [ DEBUG ]  find: serviceName = 'META-INF/services/org.apache.axis.components.net.SocketFactory'
+2021-10-05 22:58:22  [ main:2828 ] - [ DEBUG ]  find: resourceName='META-INF/services/org.apache.axis.components.net.SocketFactory'
+2021-10-05 22:58:22  [ main:2828 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-10-05 22:58:22  [ main:2829 ] - [ DEBUG ]  Could not find resource: META-INF/services/org.apache.axis.components.net.SocketFactory
+2021-10-05 22:58:22  [ main:2829 ] - [ DEBUG ]  find: resourceName='org.apache.axis.components.net.SocketFactory', mapping to constants
+2021-10-05 22:58:22  [ main:2829 ] - [ DEBUG ]  find: className='org.apache.axis.components.net.DefaultSocketFactory'
+2021-10-05 22:58:22  [ main:2830 ] - [ DEBUG ]  getNextClass: next URL='jar:file:/C:/Users/kevin/.m2/repository/org/apache/axis/axis/1.4/axis-1.4.jar!/org/apache/axis/components/net/DefaultSocketFactory.class'
+2021-10-05 22:58:22  [ main:2830 ] - [ DEBUG ]  loadClass: Loading class 'org.apache.axis.components.net.DefaultSocketFactory' with jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951
+2021-10-05 22:58:22  [ main:2832 ] - [ DEBUG ]  find: serviceName = 'META-INF/services/org.apache.axis.components.net.TransportClientProperties'
+2021-10-05 22:58:22  [ main:2832 ] - [ DEBUG ]  find: resourceName='META-INF/services/org.apache.axis.components.net.TransportClientProperties'
+2021-10-05 22:58:22  [ main:2833 ] - [ DEBUG ]  getNextResources: search using ClassLoader 'jdk.internal.loader.ClassLoaders$AppClassLoader@443b7951'
+2021-10-05 22:58:22  [ main:2833 ] - [ DEBUG ]  Could not find resource: META-INF/services/org.apache.axis.components.net.TransportClientProperties
+2021-10-05 22:58:43  [ main:23889 ] - [ DEBUG ]  java.lang.reflect.InvocationTargetException
+2021-10-05 22:58:43  [ main:23894 ] - [ DEBUG ]  Enter: SOAPPart ctor(FORM_FAULT)
+2021-10-05 22:58:43  [ main:23894 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(setMsgForm)
+2021-10-05 22:58:43  [ main:23894 ] - [ DEBUG ]  Setting current message form to: FORM_FAULT (currentMessage is now org.apache.axis.AxisFault)
+2021-10-05 22:58:43  [ main:23894 ] - [ DEBUG ]  Exit: SOAPPart ctor()
+2021-10-05 22:58:43  [ main:23894 ] - [ DEBUG ]  org.apache.axis.i18n.resource::handleGetObject(toAxisFault00)
+2021-10-05 22:58:43  [ main:23894 ] - [ DEBUG ]  Mapping Exception to AxisFault
+AxisFault
+ faultCode: {http://schemas.xmlsoap.org/soap/envelope/}Server.userException
+ faultSubcode: 
+ faultString: java.net.ConnectException: Connection timed out: no further information
+ faultActor: 
+ faultNode: 
+ faultDetail: 
+	{http://xml.apache.org/axis/}stackTrace:java.net.ConnectException: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:660)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.axis.components.net.DefaultSocketFactory.create(DefaultSocketFactory.java:153)
+	at org.apache.axis.components.net.DefaultSocketFactory.create(DefaultSocketFactory.java:120)
+	at org.apache.axis.transport.http.HTTPSender.getSocket(HTTPSender.java:191)
+	at org.apache.axis.transport.http.HTTPSender.writeToSocket(HTTPSender.java:404)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:138)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub.wsCreateBill(WsDoc1Soap11Stub.java:164)
+	at com.qitcorp.controller.ProcesoFacturasController.requestWsFacturasVantive(ProcesoFacturasController.java:80)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:44)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+
+	{http://xml.apache.org/axis/}hostname:LAPTOP-QCA1RN8H
+
+java.net.ConnectException: Connection timed out: no further information
+	at org.apache.axis.AxisFault.makeFault(AxisFault.java:101)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:154)
+	at org.apache.axis.strategies.InvocationStrategy.visit(InvocationStrategy.java:32)
+	at org.apache.axis.SimpleChain.doVisiting(SimpleChain.java:118)
+	at org.apache.axis.SimpleChain.invoke(SimpleChain.java:83)
+	at org.apache.axis.client.AxisClient.invoke(AxisClient.java:165)
+	at org.apache.axis.client.Call.invokeEngine(Call.java:2784)
+	at org.apache.axis.client.Call.invoke(Call.java:2767)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.qit.www.wsdoc1.intf.client.WsDoc1Soap11Stub.wsCreateBill(WsDoc1Soap11Stub.java:164)
+	at com.qitcorp.controller.ProcesoFacturasController.requestWsFacturasVantive(ProcesoFacturasController.java:80)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:44)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:660)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+	at java.base/java.net.Socket.connect(Socket.java:648)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.axis.components.net.DefaultSocketFactory.create(DefaultSocketFactory.java:153)
+	at org.apache.axis.components.net.DefaultSocketFactory.create(DefaultSocketFactory.java:120)
+	at org.apache.axis.transport.http.HTTPSender.getSocket(HTTPSender.java:191)
+	at org.apache.axis.transport.http.HTTPSender.writeToSocket(HTTPSender.java:404)
+	at org.apache.axis.transport.http.HTTPSender.invoke(HTTPSender.java:138)
+	... 13 more
+2021-10-05 22:58:43  [ main:23896 ] - [ ERROR ]  java.net.ConnectException: Connection timed out: no further information
+2021-10-05 22:58:43  [ main:23896 ] - [ INFO ]  OBJETO FACTURAS: 213992487
+2021-10-05 23:01:10  [ main:0 ] - [ INFO ]  ********************* INICIA PROCESO ***********************
+2021-10-05 23:01:10  [ main:5 ] - [ INFO ]  Ingresa a constructor de ProcesoFacturasController
+2021-10-05 23:01:10  [ main:9 ] - [ INFO ]  Ingresa a constructor de ProcesoFacturasDao
+2021-10-05 23:01:10  [ main:10 ] - [ DEBUG ]  Antes de obtener la lista en metodo obtenerFacturasVantive
+2021-10-05 23:01:10  [ main:10 ] - [ INFO ]  Antes de ejecutar statement obtenerFacturasVantive
+2021-10-05 23:01:10  [ main:14 ] - [ INFO ]  Antes de obtener conexion
+2021-10-05 23:01:11  [ main:464 ] - [ ERROR ]  SQLException => 
+java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:489)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:553)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:254)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:528)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.qitcorp.connection.ConnectionDB.getConnection(ConnectionDB.java:26)
+	at com.qitcorp.dao.ProcesoFacturasDao.obtenerFacturasVantive(ProcesoFacturasDao.java:62)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:34)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:399)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1140)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:340)
+	... 10 more
+2021-10-05 23:01:11  [ main:468 ] - [ ERROR ]  Exception => 
+java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "conn" is null
+	at com.qitcorp.dao.ProcesoFacturasDao.obtenerFacturasVantive(ProcesoFacturasDao.java:63)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:34)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+2021-10-05 23:01:11  [ main:468 ] - [ INFO ]  se manda a llamar el metodo de finaliza conexion en obtenerFacturasVantive
+2021-10-05 23:01:11  [ main:469 ] - [ INFO ]  Obtiene lista de vista => 0
+2021-10-05 23:01:11  [ main:469 ] - [ WARN ]  Lista de la vista vacia
+2021-10-05 23:01:11  [ main:469 ] - [ INFO ]  ********************* FINALIZA PROCESO ***********************

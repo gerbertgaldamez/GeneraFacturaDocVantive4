@@ -1,0 +1,67 @@
+2021-10-05 22:29:55  [ main:2754 ] - [ ERROR ]  Exception => 
+ java.sql.SQLException: ORA-01008: not all variables bound
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:195)
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:876)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1175)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1296)
+	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1498)
+	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:406)
+	at com.qitcorp.dao.ProcesoFacturasDao.obtenerFacturasVantive(ProcesoFacturasDao.java:64)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:34)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+2021-10-05 22:48:37  [ main:1530 ] - [ ERROR ]  Exception => 
+ java.sql.SQLException: ORA-01008: not all variables bound
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:447)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:396)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:951)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:513)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:227)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:531)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:195)
+	at oracle.jdbc.driver.T4CStatement.executeForDescribe(T4CStatement.java:876)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1175)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1296)
+	at oracle.jdbc.driver.OracleStatement.executeQuery(OracleStatement.java:1498)
+	at oracle.jdbc.driver.OracleStatementWrapper.executeQuery(OracleStatementWrapper.java:406)
+	at com.qitcorp.dao.ProcesoFacturasDao.obtenerFacturasVantive(ProcesoFacturasDao.java:65)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:34)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+2021-10-05 22:55:25  [ main:2239 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-05 22:55:47  [ main:23856 ] - [ ERROR ]  java.net.ConnectException: Connection timed out: no further information
+ 2021-10-05 22:58:22  [ main:2359 ] - [ ERROR ]  java.sql.SQLException: Falta el parámetro IN o OUT en el índice:: 1
+ 2021-10-05 22:58:43  [ main:23896 ] - [ ERROR ]  java.net.ConnectException: Connection timed out: no further information
+ 2021-10-05 23:01:11  [ main:464 ] - [ ERROR ]  SQLException => 
+ java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:489)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:553)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:254)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:528)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.qitcorp.connection.ConnectionDB.getConnection(ConnectionDB.java:26)
+	at com.qitcorp.dao.ProcesoFacturasDao.obtenerFacturasVantive(ProcesoFacturasDao.java:62)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:34)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
+Caused by: oracle.net.ns.NetException: Listener refused the connection with the following error:
+ORA-12505, TNS:listener does not currently know of SID given in connect descriptor
+ 
+	at oracle.net.ns.NSProtocol.connect(NSProtocol.java:399)
+	at oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1140)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:340)
+	... 10 more
+2021-10-05 23:01:11  [ main:468 ] - [ ERROR ]  Exception => 
+ java.lang.NullPointerException: Cannot invoke "java.sql.Connection.prepareStatement(String)" because "conn" is null
+	at com.qitcorp.dao.ProcesoFacturasDao.obtenerFacturasVantive(ProcesoFacturasDao.java:63)
+	at com.qitcorp.controller.ProcesoFacturasController.startProcessFactura(ProcesoFacturasController.java:34)
+	at com.qitcorp.main.StartProcess.main(StartProcess.java:17)
